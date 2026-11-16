@@ -156,14 +156,6 @@
 				"typeProperties": {
 					"scripts": [
 						{
-							"parameters": [
-								{
-									"value": ""
-								},
-								{
-									"value": ""
-								}
-							],
 							"type": "Query",
 							"text": {
 								"value": "select MAX(@{pipeline().parameters.cdc_col}) as cdc from @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
