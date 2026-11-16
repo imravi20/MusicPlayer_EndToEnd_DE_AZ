@@ -348,7 +348,7 @@
 					"method": "POST",
 					"url": "https://prod-27.southeastasia.logic.azure.com:443/workflows/21df28567fcf41d985271368d41f90bb/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=iEabdb9xEmVPJPhafMdJ36aWVlV_hAM656n3GVj1FeU",
 					"body": {
-						"value": "{\"pipeline_name\":\"@{pipeline().Pipeline}\",\n\"pipeline_id:\"@{pipeline().RunId}\"\n}",
+						"value": "{\n    \"pipeline_name\": \"@{pipeline().Pipeline}\",\n    \"pipeline_id\": \"@{pipeline().RunId}\"\n}",
 						"type": "Expression"
 					}
 				}
